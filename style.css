@@ -747,3 +747,8 @@ section.show h2 {
   border: 3px solid #a855f7;
   box-shadow: 0 0 20px rgba(168,85,247,0.5);
 }
+
+.event, .award {
+  opacity: 1;
+  transform: translateY(0);
+}
