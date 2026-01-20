@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio GameX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <header>
+        <nav>
+            <div class="logo">GameX</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#games">Jeux</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO / SLIDER -->
+    <section id="home" class="hero">
+        <div class="slider">
+            <img src="https://via.placeholder.com/1200x500?text=Game+1" class="slide active">
+            <img src="https://via.placeholder.com/1200x500?text=Game+2" class="slide">
+            <img src="https://via.placeholder.com/1200x500?text=Game+3" class="slide">
+        </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="about" class="about">
+        <h2>À propos de GameX</h2>
+        <p>GameX est un studio indépendant spécialisé dans la création de jeux innovants et immersifs. Nous mélangeons gameplay, graphismes et narration pour offrir des expériences uniques.</p>
+    </section>
+
+    <!-- JEUX -->
+    <section id="games" class="games">
+        <h2>Nos Jeux</h2>
+        <div class="game-cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Jeu+1" alt="Jeu 1">
+                <h3>Jeu 1</h3>
+                <p>Un jeu épique plein d’aventures et de défis.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Jeu+2" alt="Jeu 2">
+                <h3>Jeu 2</h3>
+                <p>Explorez des mondes fascinants et mystérieux.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Jeu+3" alt="Jeu 3">
+                <h3>Jeu 3</h3>
+                <p>Un jeu qui mettra vos compétences à l’épreuve.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Contactez-nous</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 GameX Studio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
