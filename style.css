@@ -6,17 +6,30 @@
     font-family: 'Arial', sans-serif;
 }
 
-body {
-    line-height: 1.6;
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* CANVAS */
+canvas#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0d0221, #1a0033);
 }
 
 /* NAVIGATION */
 header {
     position: fixed;
     width: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(10,10,30,0.8);
     color: #fff;
     z-index: 1000;
+    backdrop-filter: blur(10px);
 }
 
 nav {
@@ -27,8 +40,9 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    color: #a259ff;
 }
 
 .nav-links {
@@ -43,11 +57,12 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: #fff;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #ff4c4c;
+    color: #a259ff;
 }
 
 /* BURGER MENU */
@@ -75,10 +90,12 @@ nav {
     margin-top: 70px;
 }
 
+/* SLIDER */
 .slider {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    max-width: 1200px;
+    height: 500px;
 }
 
 .slide {
@@ -87,6 +104,8 @@ nav {
     height: 100%;
     object-fit: cover;
     opacity: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #a259ff;
     transition: opacity 1s;
 }
 
@@ -98,12 +117,17 @@ nav {
 section {
     padding: 5rem 2rem;
     text-align: center;
+    color: #fff;
 }
 
 .about, .games, .contact {
-    background: #f4f4f4;
+    background: rgba(10,10,30,0.85);
+    border-radius: 20px;
+    margin: 2rem auto;
+    max-width: 1200px;
 }
 
+/* GAME CARDS */
 .games .game-cards {
     display: flex;
     justify-content: center;
@@ -112,16 +136,17 @@ section {
 }
 
 .card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: rgba(20,10,50,0.8);
+    border: 1px solid #4b00ff;
+    border-radius: 15px;
     padding: 1rem;
     width: 300px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 20px #a259ff;
 }
 
 .card img {
@@ -141,31 +166,39 @@ section {
 .contact input, .contact textarea {
     padding: 0.8rem;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #4b00ff;
+    background: rgba(30,10,60,0.5);
+    color: #fff;
+}
+
+.contact input::placeholder, .contact textarea::placeholder {
+    color: #ccc;
 }
 
 .contact button {
     padding: 1rem;
     border: none;
-    background: #ff4c4c;
+    background: #a259ff;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s, box-shadow 0.3s;
 }
 
 .contact button:hover {
-    background: #e04343;
+    background: #7a00ff;
+    box-shadow: 0 0 20px #a259ff;
 }
 
 /* FOOTER */
 footer {
-    background: #222;
+    background: rgba(10,10,30,0.9);
     color: #fff;
     text-align: center;
     padding: 2rem;
     margin-top: 2rem;
+    border-top: 1px solid #4b00ff;
 }
 
 /* RESPONSIVE */
@@ -175,7 +208,7 @@ footer {
         right: 0;
         height: 100vh;
         top: 0;
-        background: rgba(0,0,0,0.9);
+        background: rgba(0,0,40,0.95);
         flex-direction: column;
         align-items: center;
         width: 50%;
