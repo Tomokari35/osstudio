@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #0b0b12;
+  background: #000000;
   color: white;
   overflow-x: hidden;
 }
@@ -31,7 +31,7 @@ header {
 header h1 {
   font-size: 4rem;
   font-weight: 800;
-  background: linear-gradient(90deg, #a855f7, #3b82f6);
+  background: linear-gradient(90deg, #ffffff, #3a0037);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -349,7 +349,7 @@ body.light footer {
 #loader {
   position: fixed;
   inset: 0;
-  background: #0b0b12;
+  background: #000000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -717,4 +717,33 @@ section.show h2 {
 
 .commision-status.closed {
   color: #f87171; /* rouge pour fermé */
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(168,85,247,0.2);
+  border-radius: 25px;
+  padding: 20px;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.member-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 35px rgba(168,85,247,0.3);
+}
+
+/* Conteneur rond pour image */
+.member-card img {
+  width: 120px;       /* taille fixe */
+  height: 120px;      /* taille fixe */
+  border-radius: 50%; /* cercle parfait */
+  object-fit: cover;  /* garde proportions, coupe si nécessaire */
+  margin-bottom: 15px;
+  border: 3px solid #a855f7;
+  box-shadow: 0 0 20px rgba(168,85,247,0.5);
 }

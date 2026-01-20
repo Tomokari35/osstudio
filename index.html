@@ -10,9 +10,8 @@
 </head>
   
 <body>
-  <div id="particles-js"></div>
   <!-- LOADER -->
-   <div id="loader">
+  <div id="loader">
     <h1>Os'tomokari</h1>
     <div class="loader-bar">
       <span></span>
@@ -31,21 +30,13 @@
     </div>
     <button id="theme-toggle">🌙</button> 
   </header>
-  <section id="commision" class="commision">
-  <h2>Commision</h2>
-
-  <div class="commision-status">
-    <!-- On mettra “Ouvert” ou “Fermé” ici -->
-    <p id="commision-text">Open</p>
-  </div>
-</section>
 
  <section id="about" class="about">
   <h2>À propos</h2>
 
   <div class="about-container">
     <div class="about-avatar">
-      <img src="https://cdn.discordapp.com/attachments/1461462232712872090/1462772334015549443/IMG_6998.jpg" alt="Avatar Ostomokari">
+      <img src="https://cdn.discordapp.com/attachments/1461462232712872090/1462772334015549443/IMG_6998.jpg?ex=696f6865&is=696e16e5&hm=ea9a7c5a3ea4f144a0a325f1d27394dacbe48d50205e161ba7077807f5c9887b&" alt="Avatar Ostomokari">
     </div>
 
     <div class="about-text">
@@ -78,28 +69,26 @@
     </div>
   </section>
 
-  <!-- Fenêtres flottantes -->
-  <div id="window-container"></div>
-<section id="contact">
-  <h2>Me contacter</h2>
+  <section id="team">
+  <h2>La Team</h2>
 
-  <div class="cards">
-    <a href="https://discord.gg/cRwEgpXDue" target="_blank" class="card link-card">
-      <h3>💬 Serveur Discord</h3>
-      <p>Rejoins la communauté</p>
+  <div class="cards team-cards">
+
+    <a href="team/tomokari.html" class="card member-card">
+      <img src="https://cdn.discordapp.com/attachments/1461462232712872090/1462772334015549443/IMG_6998.jpg?ex=6970b9e5&is=696f6865&hm=b3081f0e6235cd5b726206d6b476198b6f2616b87e446f078c77f280e0b55603&">
+      <h3>Tomokari</h3>
+      <p>Fondateur</p>
     </a>
 
-    <a href="https://guns.lol/os.tomokari" target="_blank" class="card link-card">
-      <h3>🔗 guns.lol</h3>
-      <p>Tous mes liens au même endroit</p>
+    <a href="team/sara.html" class="card member-card">
+      <img src="img/neo.png">
+      <h3>Neo</h3>
+      <p>Développeur</p>
     </a>
 
-    <a href="https://form.typeform.com/to/fcoaOfoA" target="_blank" class="card link-card">
-      <h3>📩 Me contacter</h3>
-      <p>Formulaire ou page de contact</p>
-    </a>
   </div>
 </section>
+
   <!-- 2. Compétences / Skills -->
 <section id="skills">
   <h2>Mes compétences</h2>
@@ -233,9 +222,25 @@
   <footer>
     <p>© 2026 Ostomokari — Tous droits réservés</p>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script src="script.js"></script>
 
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: ["#a855f7", "#3b82f6"] },
+        size: { value: 3 },
+        move: { speed: 1.2 },
+        line_linked: {
+          enable: true,
+          color: "#a855f7",
+          opacity: 0.3
+        }
+      }
+    });
+  </script>
   <div id="easter-egg">
   ✨ Mode Ostomokari activé ✨
 </div>

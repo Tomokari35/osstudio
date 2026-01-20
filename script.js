@@ -13,11 +13,11 @@ elements.forEach(el => observer.observe(el));
 
 // Rotating typing text
 const texts = [
-  "Créateur",
-  "Développeur",
-  "UI Designer",
+  "Créateurs",
+  "Développeurs",
+  "Os'Studio",
   "Discord Expert",
-  "Roblox"
+  "Groupe"
 ];
 
 let textIndex = 0;
