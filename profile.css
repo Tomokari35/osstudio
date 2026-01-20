@@ -1,0 +1,217 @@
+/* ======================
+   RESET & BASE
+====================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #000000;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ======================
+   BACK BUTTON
+====================== */
+.back {
+  position: fixed;
+  top: 25px;
+  left: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #a855f7;
+  z-index: 9999;
+  transition: 0.3s;
+}
+
+.back:hover {
+  text-shadow: 0 0 20px #a855f7;
+}
+
+/* ======================
+   PROFILE CARD
+====================== */
+.profile {
+  max-width: 900px;
+  margin: 120px auto 100px;
+  padding: 50px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(168,85,247,0.25);
+  border-radius: 30px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 60px rgba(168,85,247,0.35);
+  text-align: center;
+}
+
+/* AVATAR */
+.profile .avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(45deg, #a855f7, #3b82f6);
+  margin: 0 auto 20px;
+  box-shadow: 0 0 40px rgba(168,85,247,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #0b0b12;
+}
+
+/* NAME & ROLE */
+.profile h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 5px;
+}
+
+.profile .role {
+  opacity: 0.85;
+  margin-bottom: 40px;
+}
+
+/* ======================
+   SKILLS
+====================== */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.skill h3 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #3b82f6;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-bar span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: rgb(56, 0, 47);
+}
+
+@keyframes fillBar {
+  to { width: var(--width); }
+}
+
+/* ======================
+   STATS
+====================== */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.stats div {
+  background: rgba(255,255,255,0.04);
+  border-radius: 20px;
+  padding: 25px;
+  font-weight: 700;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+  transition: 0.35s;
+}
+
+.stats div:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 45px rgba(168,85,247,0.6);
+}
+
+/* ======================
+   PORTFOLIO
+====================== */
+.profile h2 {
+  font-size: 2rem;
+  margin: 50px 0 20px;
+  color: #a855f7;
+}
+
+.profile ul {
+  list-style: none;
+  max-width: 600px;
+  margin: auto;
+}
+
+.profile ul li {
+  background: rgba(255,255,255,0.03);
+  margin-bottom: 12px;
+  padding: 18px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.profile ul li:hover {
+  background: rgba(168,85,247,0.12);
+}
+
+/* ======================
+   SOCIAL LINKS
+====================== */
+.profile .socials a {
+  display: inline-block;
+  margin: 10px;
+  padding: 14px 36px;
+  border-radius: 40px;
+  background: linear-gradient(45deg, #a855f7, #3b82f6);
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.profile .socials a:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 0 35px rgba(168,85,247,0.6);
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+@media (max-width: 768px) {
+  .profile {
+    padding: 30px;
+  }
+
+  .profile h1 {
+    font-size: 2.5rem;
+  }
+
+  .profile .avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}

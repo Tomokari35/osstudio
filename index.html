@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Os'Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+  <!-- LOADER -->
+  <div id="loader">
+    <h1>Os'Studio</h1>
+    <div class="loader-bar">
+      <span></span>
+    </div>
+  </div>
+  <header>
+    <h1>Os'Studio</h1>
+    <p id="typing"></p>
+
+    <div class="buttons">
+      <a href="#about" class="btn primary">Découvrir</a>
+      <a href="#projects" class="btn secondary">Projets</a>
+      <a href="#contact" class="btn secondary">Contact</a>
+    </div>
+    <button id="theme-toggle">🌙</button> 
+  </header>
+
+ <section id="about" class="about">
+  <h2>À propos</h2>
+
+  <div class="about-container">
+    <div class="about-avatar">
+      <img src="https://cdn.discordapp.com/attachments/1461462232712872090/1463078749754097731/87745-moon.jpg?ex=69712e84&is=696fdd04&hm=b478669cd0c339bd2b869637c8e3d7474377d4370eae0ff56d97789dacab7b29&" alt="Avatar OsStudio">
+    </div>
+
+    <div class="about-text">
+      <h3>Os'Studio</h3>
+      <p>
+        Studio de jeu la pour vous aider
+      </p>
+    </div>
+  </div>
+ </section>
+
+  <section id="projects">
+    <h2>Mos Projets</h2>
+    <div class="cards">
+      <div class="card" onclick="openWindow('site')">
+        <h3>🌐 Site Web</h3>
+        <p>Design premium, animations et expérience moderne.</p>
+      </div>
+      <div class="card" onclick="openWindow('discord')">
+        <h3>🤖 Bot Discord</h3>
+        <p>Python, bon fonctionnement et automatisation.</p>
+      </div>
+      <div class="card" onclick="openWindow('future')">
+        <h3>🎮 Jeu Roblox</h3>
+        <p>En développement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+  <h2>La Team</h2>
+
+  <div class="cards team-cards">
+
+    <a href="tomokari.html" class="card member-card">
+      <img src="https://cdn.discordapp.com/attachments/1461462232712872090/1462772334015549443/IMG_6998.jpg?ex=6970b9e5&is=696f6865&hm=b3081f0e6235cd5b726206d6b476198b6f2616b87e446f078c77f280e0b55603&">
+      <h3>Tomokari</h3>
+      <p>Fondateur</p>
+    </a>
+
+    <a href="sara.html" class="card member-card">
+      <img src="img/neo.png">
+      <h3>Neo</h3>
+      <p>Développeur</p>
+    </a>
+
+  </div>
+</section>
+
+  <!-- 2. Compétences / Skills -->
+<section id="skills">
+  <h2>Nos Compétences</h2>
+  <div class="skills-container">
+    <div class="skill">
+      <h3>HTML / CSS</h3>
+      <div class="skill-bar"><span style="width: 60%"></span></div>
+    </div>
+    <div class="skill">
+      <h3>LUA</h3>
+      <div class="skill-bar"><span style="width: 65%"></span></div>
+    </div>
+    <div class="skill">
+      <h3>LUAU (ROBLOX)</h3>
+      <div class="skill-bar"><span style="width: 85%"></span></div>
+    </div>
+    <div class="skill">
+      <h3>Python / Discord Bots</h3>
+      <div class="skill-bar"><span style="width: 80%"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Blog / Actualités -->
+<section id="blog">
+  <h2>Blog / Actualités</h2>
+  <div class="blog-container">
+    <div class="blog-card">
+      <h3>Quel sont vos prix</h3>
+      <p>Nos prix varrient en fonction de la demande du client.</p>
+    </div>
+    <div class="blog-card">
+      <h3>Lancement de mon site web</h3>
+      <p>Design modernisé et animations interactives pour tous les utilisateurs.</p>
+    </div>
+    <div class="blog-card">
+      <h3>Projet futur en préparation</h3>
+      <p>Un gros projet devrait arrivé sur steam !</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. FAQ / Aide -->
+<section id="faq">
+  <h2>FAQ</h2>
+  <div class="faq-container">
+    <div class="faq-item">
+      <h3>Comment nous contacter ?</h3>
+      <p>Via Discord</p>
+    </div>
+    <div class="faq-item">
+      <h3>Pouvez-vous créer un bot personnalisé ?</h3>
+      <p>Oui, nous proposont des projets sur mesure pour Discord.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Mes projets sont-ils open-source ?</h3>
+      <p>Certaines parties sont disponibles, d'autres restent privées.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Stats / Achievements -->
+<section id="stats">
+  <h2>Nos Stats</h2>
+  <div class="stats-container">
+    <div class="stat">
+      <h3>10+</h3>
+      <p>Projets réalisés</p>
+    </div>
+    <div class="stat">
+      <h3>2+</h3>
+      <p>Bots en ligne</p>
+    </div>
+    <div class="stat">
+      <h3>80+</h3>
+      <p>Membres Discord</p>
+    </div>
+    <div class="stat">
+      <h3>2025</h3>
+      <p>Lancement du Studio</p>
+    </div>
+    <div class="stat">
+      <h3>5+</h3>
+      <p>Jeu Roblox</p>
+    </div>
+  </div>
+</section>
+<section id="roadmap">
+  <h2>Roadmap & Événements</h2>
+  <div class="timeline">
+    <div class="event">
+      <div class="event-date">Jan 2026</div>
+      <div class="event-desc">Lancement du nouveau site web</div>
+    </div>
+    <div class="event">
+      <div class="event-date">Mars 2026</div>
+      <div class="event-desc">Publication du bot Discord avancé</div>
+    </div>
+    <div class="event">
+      <div class="event-date">Juin 2026</div>
+      <div class="event-desc">Premier jeu du studio ?</div>
+    </div>
+  </div>
+</section>
+  <section id="awards">
+  <h2>Awards & Certifications</h2>
+  <div class="awards-container">
+    <div class="award">
+      <img src="award1.png" alt="Award 1">
+      <h4>Top Developer 2025</h4>
+    </div>
+    <div class="award">
+      <img src="award2.png" alt="Award 2">
+      <h4>Discord Certified Bot</h4>
+    </div>
+    <div class="award">
+      <img src="award3.png" alt="Award 3">
+      <h4>UI/UX Excellence</h4>
+    </div>
+  </div>
+</section>
+<section id="paypal">
+  <h2>Soutiens-nous via PayPal (SOON !)</h2>
+  <p>Si tu apprécies notre travail, tu peux nous aider en faisant un don. Chaque soutien compte !</p>
+  <div class="paypal-container">
+    <a href="nil" target="_blank" class="btn primary">
+      💖 Faire un don
+    </a>
+  </div>
+</section>
+  <footer>
+    <p>© 2026 Os'Studio' — Tous droits réservés</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: ["#a855f7", "#3b82f6"] },
+        size: { value: 3 },
+        move: { speed: 1.2 },
+        line_linked: {
+          enable: true,
+          color: "#a855f7",
+          opacity: 0.3
+        }
+      }
+    });
+  </script>
+  <div id="easter-egg">
+  ✨ Mode Ostomokari activé ✨
+</div>
+</body>
+</html>
